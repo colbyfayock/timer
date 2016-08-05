@@ -56,6 +56,7 @@ $(function() {
         for ( var key in _this.time ) {
 
             var $container = _this.instance.find('.timer-' + key),
+                $label = _this.instance.find('.timer-label-' + key),
                 time_split = Array.prototype.slice.call(_this.time[key].toString().split('')),
                 time_split_len = time_split.length;
 
@@ -72,6 +73,8 @@ $(function() {
                 $container.append($digit);
 
             }
+
+            $label.attr('class', 'timer-label-' + key.substring(0, key.length - 1) + ( _this.time[key] === 1 ? 's' : '' ) );
 
         }
 
