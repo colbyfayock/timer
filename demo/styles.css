@@ -1,0 +1,71 @@
+[class*="timer-digit"] {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    color: white;
+    line-height: 2em;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.timer-loading {
+    display: block;
+}
+
+.timer-display,
+.timer-expired {
+    display: none;
+}
+
+.timer-is-active .timer-display {
+    display: block;
+}
+
+.timer-is-expired .timer-expired {
+    display: block;
+}
+
+.timer-is-active .timer-loading,
+.timer-is-expired .timer-loading {
+    display: none;
+}
+
+.timer-digit-0 {
+    background-color: #f44336;
+}
+
+.timer-digit-1 {
+    background-color: #E91E63;
+}
+
+.timer-digit-2 {
+    background-color: #9C27B0;
+}
+
+.timer-digit-3 {
+    background-color: #673AB7;
+}
+
+.timer-digit-4 {
+    background-color: #3F51B5;
+}
+
+.timer-digit-5 {
+    background-color: #2196F3;
+}
+
+.timer-digit-6 {
+    background-color: #00BCD4;
+}
+
+.timer-digit-7 {
+    background-color: #009688;
+}
+
+.timer-digit-8 {
+    background-color: #4CAF50;
+}
+
+.timer-digit-9 {
+    background-color: #CDDC39;
+}
